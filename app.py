@@ -8,6 +8,9 @@ from streamlit_js_eval import streamlit_js_eval
 st.set_page_config(page_title="Chat", page_icon=":robot:")
 st.header("ChatBot")
 
+st.write(st.secrets["OPENAI_API_KEY"])
+st.write(st.secrets["OPENAI_API_BASE"])
+
 # region vars
 if "setup_complete" not in st.session_state:
     st.session_state.setup_complete = False
